@@ -10,6 +10,17 @@
             
         }
 
+        #content {
+            width: 60%;
+            margin: auto;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #content {
+                width: 100%
+            }
+        }
+
         body {
             background-image: grey;
         }
@@ -59,14 +70,15 @@
 
     <nav class="container d-flex justify-content-center navbar navbar-dark bg-dark sticky-top shadow">
         <a class="navbar-brand " href="#">Home</a>
+        <a class="navbar-brand " href="/projects">My Projects</a>
     </nav>
 
-    <div class="container bg-white shadow-lg">
+    <div class="bg-white shadow-lg" id="content">
         <div class="profile text-center m-3">
-            <h2 class="text-center shadow-sm text-secondary">Profile</h2>
+            <h2 class="text-center shadow-sm p-3" >Profile</h2>
             <p class="m-3">
                 I'm a web developer
-            <h2 class="text-center text-warning shadow-sm">Skills</h2>
+            <h2 class="text-center p-3 shadow-sm">Skills</h2>
                 <div class="text-center m-3"  style="font-size: 50px">
                 <i class="bi bi-github"></i>
                 <i class="fab fa-js-square" ></i>
@@ -75,36 +87,45 @@
                 <i class="fab fa-node"></i>
                 </div>
 
-            <h2 class="text-center shadow-sm text-success">Education</h2>
+            <h2 class="text-center shadow-sm p-3">Education</h2>
             <div class="d-flex justify-content-center m-3">
             <div class="container">
                 <div class="row row-cols-3">
-                <div class="col d-flex flex-column">
-                    <h5>FEU Diliman</h5>
-                    <h6>Bachelor of Science in Information Technology</h6>
-                    <p>2019-Present</h3>
-                </div>
-                <div class="col d-flex flex-column">
-                    <h5>Placeholder</h5>
-                    <h6>Senior</h6>
-                    <p>2016-2019</h3>
-                </div>
-                <div class="col d-flex flex-column">
-                    <h5>Placeholder</h5>
-                    <h6>Senior</h6>
-                    <p>2016-2019</h3>
-                </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h5>FEU Diliman</h5>
+                                <h6>Bachelor of Science in Information Technology</h6>
+                                <p>2019-Present</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Placeholder</h5>
+                                <h6>Senior</h6>
+                                <p>2016-2019</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Placeholder</h5>
+                                <h6>Senior</h6>
+                                <p>2016-2019</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
 
     </div>
 
-
-
     <div class="container text-center bg-white">
-
-    <h4 class="shadow-sm">Contact me</h4>
+    <h4 class="shadow-sm p-3">Contact me</h4>
     
     <div class="container">
         <div class="row row-cols-2">
