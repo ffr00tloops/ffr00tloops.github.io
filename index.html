@@ -42,7 +42,7 @@
             from {
                 opacity: 0;
             }
-            to {s
+            to {
                 opacity: 1;
             }
         }
@@ -148,8 +148,15 @@
 
             </p>
             <p class="bio text-start">
-                Ever since I was a child, I always had a great interest in computers and technology. When my parents gave me my first computer, I was ecstatic to tinker and see what I can do with such a device. After a while, I discovered web development. It opened so many possibilities for me. I was amazed at the things that people can create through it. I was amazed and wanted to make cool stuff, therefore I'm continuing to seek new opportunities to learn as much as possible and contribute.
+                Ever since I was a kid, I always had a great interest in computers and technology. When my parents gave me my first computer, I was ecstatic to tinker and see what I can do with such a device.
+            </p>
 
+            <p class="bio text-start">
+                After a while, I discovered web development. It opened so many possibilities for me. I was amazed at the things that people can create. I also wanted to make amazing things.
+            </p>
+
+            <p class="bio text-start">
+                I want to seek more opportunities to learn as much as possible and allow me to become a better developer.
             </p>
 
             <h2 class="text-center p-3 shadow-sm">Skills</h2>
@@ -239,6 +246,21 @@
                 </div>
             </div>
         </div>
+        <div>
+            <h2 class="p-3 m-3">Chat Application using Websockets</h2>
+            <div id="project-div" class="bg-dark p-3 m-3 d-flex">
+                <img id="picss" style="height: 300px" src="https://user-images.githubusercontent.com/68136647/164361105-9895969c-66ff-4c1d-b753-3de2544c4365.png"/>
+                <div class="bg-white p-3 m-3">
+                    <p class="fs-5">
+                        A real time chat application for testing Web socket technology
+                    </p>
+                    <h5>
+                        Links
+                    </h5>
+                    <a href="https://github.com/ffr00tloops/social-app">https://github.com/ffr00tloops/singlepage-reactjs-redditapitest</a>
+                </div>
+            </div>
+        </div>
     </div>
 
         
@@ -246,25 +268,23 @@
 </body>
 <script>
 
-    document.querySelector("#projects").style.visibility = "hidden"
+
 
     document.querySelector("#projectsbtn").onclick = () => {        
-        document.querySelector("#main").style.visibility = "hidden"
-        document.querySelector("#projects").style.visibility = "visible"
+        document.querySelector("#main").style.display = "none"
+        document.querySelector("#projects").style.display = "block"
         document.querySelector("#projects").classList.add("transition")
         document.querySelector("#main").classList.remove("transition")
-        /*if (document.qierySelector("#projects").contains == true) {
-
-        }
-        */
+        removed.insertAfter('')
 
     }
 
     document.querySelector("#homebtn").onclick = () => {        
-        document.querySelector("#projects").style.visibility = "hidden"
-        document.querySelector("#main").style.visibility = "visible"
+        document.querySelector("#projects").style.display = "none"
+        document.querySelector("#main").style.display = "block"
         document.querySelector("#main").classList.add("transition")
         document.querySelector("#projects").classList.remove("transition")
+        
     }
 
     
